@@ -4,11 +4,11 @@ const nextConfig: NextConfig = {
   experimental: {
     useCache: true,
   },
+  turbopack: {
+    root: process.cwd(),
+  },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
 }
 
